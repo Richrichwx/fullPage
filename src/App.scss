@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.screenContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 42px 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.headerLogo {
+  height: 50px;
+  width: 56px;
+  cursor: pointer;
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navJoinWrapper {
+  font-family: "Lato_Bold",sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+  margin-right: 1.3em;
+  width: 135px;
+}
+
+.navJoin {
+  padding: 9px;
+  border-radius: 23px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    border: 2px solid #ffffff;
+    font-weight: 700;
+    border-radius: 23px;
+    color: #1e5bff;
+    background: #ffffff;
+  }
+}
+
+.navAbout {
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  width: 100px;
+  height: 38px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    font-weight: 600;
+  }
+}
+
+.content {
+  padding: 0 210px;
+  flex-direction: column;
+  display: flex;
+}
+
+.textContent {
+  font-size: 42px;
+  color: #ffffff;
+  font-weight: bolder;
+  text-align: left;
+  padding-bottom: 45px;
+}
+
+.contentIcon {
+  width: 140px;
+  height: 140px;
+  background: darksalmon;
+}
+
+
+.section {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.sectionInfo {
+  width: 300px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.4;
+  span {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  p {
+    margin: 5px 0 20px 0;
+    color: #415687;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
