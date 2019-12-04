@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.scss';
-import Screen from './components/SecondScreen';
+import SecondPage from './components/SecondScreen';
 
 function App() {
   return (
     <div className="App">
-      <Screen />
+      <SecondPage />
     </div>
   );
 }
