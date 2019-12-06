@@ -33,8 +33,8 @@ const SecondPage = () => {
                     </div>
                   </div>
                   <div className="content">
-                    <h1 className="textContent">Introducing the New Regulated Standard</h1>
-                    <div className="sectionWrapper">
+                    <h1 className="animated textContent">Introducing the New Regulated Standard</h1>
+                    <div className="animatedSection sectionWrapper">
                       <div className="sectionScreen">
                         <div className="contentIcon">
                         </div>
