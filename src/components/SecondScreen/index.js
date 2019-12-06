@@ -6,7 +6,7 @@ const SecondPage = () => {
     return (
       <ReactFullpage
         scrollOverflow={true}
-        sectionsColor={["white", "#102a66"]}
+        sectionsColor={["white"]}
         render={() => {
           return (
             <div id="fullpage-wrapper">
@@ -61,9 +61,9 @@ const SecondPage = () => {
                       </div>
                     </div>
                   </div>
+                  </div>
                 </div>
               </div>
-            </div>
           );
         }}
       />
