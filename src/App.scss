@@ -21,6 +21,10 @@
   color: #09d3ac;
 }
 
+#fullpage-wrapper {
+
+}
+
 .screenContainer {
   height: 100%;
   width: 100%;
@@ -34,10 +38,11 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  @media (max-width: 768px) {
+
+  @media (max-width: 320px) {
     display: none;
   }
-  @media (max-width: 320px) {
+  @media (max-width: 500px) {
     display: none;
   }
 }
@@ -116,13 +121,36 @@
   }
 }
 
-.content {
+.contentContainer {
   padding: 0 210px;
-  flex-direction: column;
   display: flex;
   @media (max-width: 768px) {
+    padding: 0 120px;
+  }
+  @media (max-width: 500px) {
     padding: 0 28px;
-    justify-content: center;
+  }
+}
+
+.content {
+  z-index: 1;
+}
+
+.chartImage {
+  background: url('assets/chart_dark2x.png') no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+  height: 850px;
+  width: 60%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  @media (max-width: 320px) {
+    display: none;
+  }
+  @media (max-width: 1366px) {
+    display: none;
   }
 }
 
@@ -139,7 +167,6 @@
     margin: 0;
     align-items: center;
   }
-
   @media (max-width: 320px) {
     font-size: 22px;
     text-align: left;
@@ -170,38 +197,16 @@
   }
 }
 
-.contentIcon {
-  width: 140px;
-  height: 140px;
-  background: darksalmon;
-  @media (max-width: 320px) {
-    width: 100px;
-    height: 100px;
-  }
-  @media (max-width: 768px) {
-    height: 100px;
-  }
-}
-
 .sectionScreen {
-  padding: 0 20px;
   display: flex;
   margin-bottom: 55px;
   @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-  @media (max-width: 320px) {
-    margin-bottom: 25px;
+    margin-bottom: 0;
   }
 }
 
 .sectionInfo {
   height: 140px;
-  width: 305px;
-  margin-left: 15px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -214,7 +219,7 @@
   }
   p {
     margin: 5px 0 0 0;
-    color: #8896b6;
+    color: #c4d4f9;
     font-size: 16px;
     font-weight: 500;
   }
@@ -223,21 +228,14 @@
       font-size: 14px;
     }
     p {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
   @media (max-width: 320px) {
-    height: 65px;
-    width: 152px;
     p {
       font-size: 14px;
     }
   }
-}
-
-.exclusion {
-  margin-bottom: 0;
-
 }
 
 .fp-section {
@@ -248,6 +246,9 @@
     vertical-align: baseline;
   }
 
+  .fp-scrollable, .fp-scroller {
+    overflow: inherit;
+  }
 }
 
 .sectionWrapper {
