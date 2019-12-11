@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import 'fullpage.js/vendors/scrolloverflow';
+import settings from '../../assets/icons8-settings.svg';
 
 const SecondPage = () => {
   return (
@@ -37,18 +38,21 @@ const SecondPage = () => {
                     <h1 className="animated textContent">Introducing the New Regulated Standard</h1>
                     <div className="animatedSection sectionWrapper">
                       <div className="sectionScreen">
+                        <img src={settings} alt=""/>
                         <div className="sectionInfo">
                           <span>Regulatory Oversight</span>
                           <p>Built according to SEC, FINRA and EU regulations</p>
                         </div>
                       </div>
                       <div className="sectionScreen">
+                        <img src={settings} alt=""/>
                         <div className="sectionInfo">
                           <span>World-Class Safety</span>
                           <p>The highest security standards to ensure funds are protected</p>
                         </div>
                       </div>
                       <div className="sectionScreen">
+                        <img src={settings} alt=""/>
                         <div className="sectionInfo">
                           <span>A Broad Crypto Trading Offering</span>
                           <p>Aiming to establish a spot trading suite for cryptocurrencies and security tokens</p>
