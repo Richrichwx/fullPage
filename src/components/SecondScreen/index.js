@@ -7,7 +7,6 @@ const SecondPage = () => {
   return (
     <ReactFullpage
       sectionsColor={ ['white', '#0e2862',"white"] }
-      navigation={true}
       render={ () => {
         return (
           <div id="fullpage-wrapper">
