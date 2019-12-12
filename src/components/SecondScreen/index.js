@@ -6,15 +6,15 @@ import settings from '../../assets/icons8-settings.svg';
 const SecondPage = () => {
   return (
     <ReactFullpage
-      scrollOverflow={ true }
       sectionsColor={ ['white', '#0e2862',"white"] }
+      navigation={true}
       render={ () => {
         return (
           <div id="fullpage-wrapper">
             <div className="section">
               <h3>First page</h3>
             </div>
-            <div className="section fp-auto-height">
+            <div className="section">
               <div className="screenContainer">
                 <div className="header">
                   <div className="headerLogo">
@@ -63,9 +63,6 @@ const SecondPage = () => {
                   <div className="chartImage"></div>
                 </div>
               </div>
-            </div>
-            <div className="section">
-              <h3>Three page</h3>
             </div>
           </div>
         );
